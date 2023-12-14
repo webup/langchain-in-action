@@ -1,6 +1,6 @@
-from langchain.prompts import ChatPromptTemplate
-from langchain.chat_models import ChatOllama
-from langchain.schema.output_parser import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_community.chat_models import ChatOllama
 
 from fastapi import FastAPI
 from langserve import add_routes
