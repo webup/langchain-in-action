@@ -1,5 +1,5 @@
-from langchain.prompts import ChatPromptTemplate
-from langchain.chat_models import ChatOllama
+from langchain_community.chat_models import ChatOllama
+from langchain_core.prompts import ChatPromptTemplate
 import streamlit as st
 
 st.title('🦜🔗 中文小故事生成器')

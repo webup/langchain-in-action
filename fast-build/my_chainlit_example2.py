@@ -1,18 +1,18 @@
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import Chroma
+from io import BytesIO
+import chainlit as cl
+from dotenv import load_dotenv
 from langchain.chains import RetrievalQAWithSourcesChain
-from langchain.chat_models import ChatOpenAI
-from langchain.prompts.chat import (
+from langchain_community.chat_models import ChatOpenAI
+from langchain_community.embeddings.openai import OpenAIEmbeddings
+from langchain_community.vectorstores import Chroma
+from langchain_core.prompts.chat import (
     ChatPromptTemplate,
     SystemMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
-import chainlit as cl
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 import PyPDF2
-from io import BytesIO
 
-from dotenv import load_dotenv
 
 # 加载环境变量
 load_dotenv()

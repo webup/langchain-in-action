@@ -1,6 +1,6 @@
-from langchain.llms import OpenAI
 from langchain.agents import AgentType, initialize_agent, load_tools
 from langchain.callbacks import StreamlitCallbackHandler
+from langchain_community.llms import OpenAI
 import streamlit as st
 
 openai_api_key = st.sidebar.text_input('OpenAI API Key')
